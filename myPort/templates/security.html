@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home Security System - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="section">
+  <div class="container">
+    <div class="content-section">
+      <div class="title">
+        <h1>Home Security System</h1>
+      </div>
+      <div class="content">
+        <h3>Home Security System using Arduino, Web interface, and Email bot</h3>
+        <p>The home security system was developed for a course project. The system integrates sensors to detect irregular conditions and alert users via LEDs, buzzers, and email. 
+            Additionally, an appplication called coolterm was used to connect the Arduino IDE to upload data to a csv file, then a web interface built with Streamlit was used to read the csv file, 
+            and as it updates, it allows for real-time remote monitoring, 
+            enhancing both security and sustainability. <br>
+            The poster you see on the right was used to particpate in the Engineering day for the Canadian University of Dubai <br>
+            To view the Hardware showcase of the project, click on "Hardware"<br>
+            To view the Software showcase of the project, click on "Software"</p>
+        <div class="button">
+            <a href="https://youtube.com/shorts/ZfRAinaDWF8?si=jkKDL4505aG9vS07">Hardware</a>
+            <a href="https://youtu.be/WIpKyLYnx7I?si=q4Hpnkrry4A7t2hC">Software</a>
+        </div> 
+    </div>
+    </div>
+    <div class="image-section">
+        <img src="{% static 'myPort/images/security.jpg' %}" alt="Image of Home Security System" style="width: 80%; height: auto;">
+    </div>
+    </div>
+</div>
+{% endblock %}

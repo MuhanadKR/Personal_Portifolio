@@ -1,0 +1,42 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    font-size: 15px;
+    font-family: 'inconsolata', sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333333;
+    background: #fafafa;
+    transition: background 0.25s;
+  }
+  
+  .card:hover {
+    background: #ffffff;
+  }
+  
+  .card__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    margin-top: 80px;
+  }
+  
+  .card__title {
+    margin-top: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  
+  .card__body {
+    line-height: 1.5;
+  }
+  
+  .card__body:last-child {
+    margin-bottom: 0;
+  }

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="img" style="background-image: url('{% static 'myPort/images/comp.jpg' %}');"></div>
+<div class="center">
+  <div class="title">Personal Portfolio</div>
+  <div class="sub_title">Home</div>
+  <div class="btns">
+    <a href="/about"><button> About </button></a>
+    <a href="/contact"><button> Contact </button></a>
+  </div>
+</div>
+{% endblock %}

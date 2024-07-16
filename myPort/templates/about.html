@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="section">
+  <div class="container">
+    <div class="content-section">
+      <div class="title">
+        <h1>About Me</h1>
+      </div>
+      <div class="content">
+        <h3>I am a student who just finished his second year in University pursuing a Bachelor of Science in Computer Science at the Canadian University of Dubai.</h3>
+        <p>I have experience in web development, data management, user experience design, and data structures. 
+        I am also keenly interested in the future of AI and its potential to revolutionize various fields. I have also completed several projects, 
+        including coursework during semesters and independent projects outside of coursework. To view them, click on "My Projects".</p>
+        <div class="button">
+          <a href="/projects">My Projects</a>
+        </div> 
+      </div>
+    </div>
+    <div class="image-section">
+      <img src="{% static 'myPort/images/cud.jpg' %}" alt="Image of Canadian University of Dubai">
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact - My Portfolio{% endblock %}
+
+{% block content %}
+<!-- Content specific to contact page goes here -->
+
+<div class="card">
+  <div class="card__section">
+    <img src="{% static 'myPort/images/mk.jpg' %}" alt="MK name Pic" class="card__image">
+  </div>
+  <div class="card__section">
+    <p class="card__title">Contact Card</p>
+    <p class="card__body">Name: Muhanad Khaled Rashwan<br> 
+      Personal Email: mkhrashwan005@gmail.com
+    </p>
+  </div>
+</div>
+
+{% endblock %}

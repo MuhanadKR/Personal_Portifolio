@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Rhino AI - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="section">
+  <div class="container">
+    <div class="content-section">
+      <div class="title">
+        <h1>Rhino AI 🦏</h1>
+      </div>
+      <div class="content">
+        <h3>Rhino AI Chatbot</h3>
+        <p>Rhino AI is a Streamlit-powered application designed to interactively process text and PDF inputs using AI. 
+          It leverages Google's Generative AI to provide intelligent responses and supports PDF text extraction for seamless interaction with document content. <br>
+          This project uses Streamlit, Google Generative AI, and PyPDF2. <br>
+          This Project is actually deployed, to view it click on "Project Link" <br>
+          And to view the Github repository, click on "GitHub Repo"</p>
+        <div class="button">
+          <a href="https://rhinoai.streamlit.app/">Project Link</a>
+          <a href="https://github.com/MuhanadKR/Project_Rhino">GitHub Repo</a>
+        </div> 
+      </div>
+    </div>
+    <div class="image-section">
+      <img src="{% static 'myPort/images/rhino.jpg' %}" alt="Image of Rhino AI chatbot">
+    </div>
+  </div>
+</div>
+{% endblock %}

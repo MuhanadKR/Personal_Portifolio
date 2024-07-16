@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Online Clipboard - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="section">
+  <div class="container">
+    <div class="content-section">
+      <div class="title">
+        <h1> Online Clipboard 📋</h1>
+      </div>
+      <div class="content">
+        <h3>Online Clipboard Django App</h3>
+        <p>Online Clipboard App is an app designed to help users manage and organize their tasks and items efficiently. 
+            Developed using Django, the app allows users to create personalized clipboards where they can add, view, and delete items. 
+            Each item can include text, images, and files, 
+            making it versatile for various use cases such as project management, study notes, and general task tracking.<br>
+            Django (Python) was used for the backend, 
+            SQLite for the database, and HTML/CSS for the frontend, with support for file handling and media storage. <br>
+          To view the project's showcase and how it works, click on "Project Link" <br>
+          And to view the Github repository, click on "GitHub Repo"</p>
+        <div class="button">
+            <a href="https://youtu.be/F6lXU5ML7yI?si=6vsqMn39OnA6Jspo">Project Link</a>
+          <a href="https://github.com/MuhanadKR/online-clipboard">GitHub Repo</a>
+        </div> 
+      </div>
+    </div>
+    <div class="image-section">
+      <img src="{% static 'myPort/images/Online Clipboard.jpg' %}" alt="Image of Online Clipboard Django App">
+    </div>
+  </div>
+</div>
+{% endblock %}
