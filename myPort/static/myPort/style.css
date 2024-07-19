@@ -190,10 +190,10 @@ nav .menu {
 
 .content-section .content .button a {
   display: inline-block;
-  width: 200px; /* Fixed width */
-  height: 50px; /* Fixed height */
-  line-height: 50px; /* Vertically center text */
-  text-align: center; /* Horizontally center text */
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
   background-color: #3d3d3d;
   color: #fff;
   text-decoration: none;
@@ -249,23 +249,4 @@ nav .menu {
   .content-section .content .button a {
     padding: 9px 30px;
   }
-}
-
-/* Scroll-to-Top Button */
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  background-color: #1b1b1b;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-#scrollToTopBtn:hover {
-  background-color: #555;
 }
