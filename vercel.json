@@ -23,5 +23,8 @@
       "src": "/(.*)",
       "dest": "myWebsite/wsgi.py"
     }
-  ]
+  ],"env": {
+    "ALLOWED_HOSTS": ".vercel.app,127.0.0.1,localhost,muhanad-rashwan-portifolio.vercel.app",
+    "DJANGO_SETTINGS_MODULE": "myWebsite.settings"
+  }
 }
