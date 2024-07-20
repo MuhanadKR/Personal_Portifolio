@@ -1,37 +1,27 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "myWebsite/wsgi.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "15mb",
-          "runtime": "python3.12"
-        }
-      },
-      {
-        "src": "requirements.txt",
-        "use": "@vercel/python"
+  "version": 2,
+  "builds": [
+    {
+      "src": "myWebsite/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles_build"
       }
-    ],
-    "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": "/media/(.*)",
-        "dest": "/media/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "myWebsite/wsgi.py"
-      }
-    ],
-    "env": {
-      "ALLOWED_HOSTS": ".vercel.app,127.0.0.1,localhost,muhanad-rashwan-portifolio.vercel.app",
-      "DJANGO_SETTINGS_MODULE": "myWebsite.settings"
     }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "myWebsite/wsgi.py"
+    }
+  ]
 }
-
-  
