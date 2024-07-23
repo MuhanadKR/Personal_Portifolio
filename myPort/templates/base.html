@@ -14,6 +14,17 @@
       font-family: 'Poppins', sans-serif;
     }
 
+    body, html {
+      background-color: #ffffff; 
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content, .section, .container {
+      background-color: #ffffff; 
+    }
+
     ::selection {
       color: #000;
       background: #fff;
@@ -146,7 +157,7 @@
     .section {
       width: 100%;
       min-height: 100vh;
-      background-color: #ddd;
+      background-color: #ffffff; 
     }
 
     .container {
@@ -154,6 +165,7 @@
       display: block;
       margin: auto;
       padding-top: 100px;
+      background-color: #ffffff; 
     }
 
     .content-section {
@@ -214,7 +226,6 @@
       background-color: #a52a2a;
       color: #fff;
     }
-  
 
     @media screen and (max-width: 768px) {
       .container {
@@ -259,31 +270,28 @@
     }
 
     .Contact {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
-  margin: 0;
-}
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+    }
 
-.cardContact {
-  
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  margin-top: 120px; 
-  max-width: 300px; 
-  width: 100%;
-}
+    .cardContact {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      margin-top: 120px; 
+      max-width: 300px; 
+      width: 100%;
+    }
 
+    .cardContact:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
 
-.cardContact:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.containerContact {
-  padding: 2px 16px;
-}
-
+    .containerContact {
+      padding: 2px 16px;
+    }
   </style>
 </head>
 <body>
