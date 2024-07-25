@@ -1,3 +1,7 @@
 #!/bin/bash
-echo "Running collectstatic..."
-python3 manage.py collectstatic --noinput
+
+# Activate the virtual environment
+source djangoenv/Scripts/activate
+
+# Run the collectstatic command
+python manage.py collectstatic --noinput
