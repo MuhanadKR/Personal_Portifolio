@@ -12,6 +12,5 @@ This project is to showcase my background, projects, and skills.
 
 - **Backend**: Django
 - **Frontend**: HTML, CSS
-- **Database**: SQLite (default with Django)
 
 
